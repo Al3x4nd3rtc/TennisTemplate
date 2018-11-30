@@ -1,0 +1,86 @@
+body{
+     background-color: purple;
+} 
+main{
+     background-color: lightgrey;
+     width: 97%;
+     margin: 0 auto;
+}
+header{
+  height: 250px;
+  background-image: url("images/tennis.jpg");
+  background-size: cover;
+}
+h1{
+        padding: 10px;
+        font-size: 2.5em;
+        margin-bottom: 5px;
+} 
+nav ul{
+      margin: 0;
+      padding: 5px 0;
+      list-style: none;
+}
+/*nav ul li{
+      display: inline-block;
+      width: 100px;
+}*/
+nav ul li a{
+      display: block;
+      padding: 20px 0;
+      text-align: center;
+      border: 1px solid purple;
+      text-decoration: none;
+      background-color: silver;
+}
+nav ul a:link{
+      color: black;
+}
+nav ul a:visited{
+      color: blue;
+}
+nav ul a:hover{
+      background-color: lightgreen;
+      color: darkgrey;
+}
+nav ul a:active{
+      box-shadow: 5px 5px purple;
+}      
+section{
+     overflow: auto;
+}
+article, aside{
+  padding: 10px;
+  box-sizing: border-box;
+}
+section article{
+     border-bottom: 2px solid purple;
+     /*float: left;
+     width: 65%;*/
+}
+/*section aside{
+     float: right;
+     width: 25%;
+}*/
+footer{
+      background-color: lightgreen;
+      border-top: 2px solid purple;
+}
+@media screen and (min-width: 460px) {
+      h1{
+             color: darkorange;
+        }
+        nav ul li{
+            display: inline-block;
+            width: 100px;
+        }
+        section article{
+            float: left;
+            width: 65%;
+            border-bottom: 0 solid purple;
+        }
+        section aside{
+            float: right;
+            width: 25%;
+      }
+} /*end of 460*/
